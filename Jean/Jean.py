@@ -7,7 +7,6 @@ import praw
 import aiocron
 from discord.ext import commands
 from dotenv import load_dotenv
-from utils.customUtils import *
 
 bot = commands.Bot(command_prefix='j/')
 bot.remove_command('help')
