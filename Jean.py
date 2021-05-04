@@ -1,4 +1,4 @@
-import artifacts.rate_artifact_jean as raDPS
+import rate_artifact_jean as raDPS
 #############################################################
 import datetime, time, urllib.parse, re, asyncio, json
 import discord
