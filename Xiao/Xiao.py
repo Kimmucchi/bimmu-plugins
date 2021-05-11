@@ -52,4 +52,4 @@ class Xiao(commands.Cog):
         await channel.send(message)
 ####################################################################
 def setup(bot):
-  bot.add_cog(Jean(bot))
+  bot.add_cog(Xiao(bot))
