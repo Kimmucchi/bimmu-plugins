@@ -7,12 +7,12 @@ import aiocron
 from discord.ext import commands
 from dotenv import load_dotenv
 
-bot = commands.Bot(command_prefix='x/')
+bot = commands.Bot(command_prefix='mu/')
 bot.remove_command('help')
 
 calls = 0
 
-class Xiao(commands.Cog):
+class Kimmu(commands.Cog):
   def __init__(self, bot):
     self.bot = bot
 #############################################    
@@ -63,4 +63,4 @@ class Xiao(commands.Cog):
         await channel.send(message)
 ####################################################################
 def setup(bot):
-  bot.add_cog(Xiao(bot))
+  bot.add_cog(Kimmu(bot))
