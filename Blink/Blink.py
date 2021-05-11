@@ -52,7 +52,7 @@ class Blink(commands.Cog):
         await ctx.send(message)
     elif channel is not None:
         await channel.send(message)
-    elif ctx == "help":
+    elif channel == "help":
       """Test Help Message?"""
       await ctx.send_help(ctx.command)
 
