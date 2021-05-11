@@ -24,7 +24,7 @@ class Blink(commands.Cog):
 #########################
 # XIAO BOT SHENNANIGANS #
 #########################
-  @commands.command(name='say')
+  @xiao.command(name='say')
   async def say(self, ctx, channel_mention=None):
   #DEFINE VARIABLES
     img_url = None
