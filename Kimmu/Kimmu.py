@@ -13,14 +13,11 @@ bot.remove_command('help')
 calls = 0
 
 class Kimmu(commands.Cog):
+  """Test Help Message?"""
   def __init__(self, bot):
     self.bot = bot
 #############################################    
-  @commands.group(name="kimmu", usage="<option>", invoke_without_command=True)
-  @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
-  async def kimmu(self, ctx: commands.Context):
-    """Test?"""
-    await ctx.send_help(ctx.command)
+
 
 #########################
 # XIAO BOT SHENNANIGANS #
