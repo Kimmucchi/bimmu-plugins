@@ -17,15 +17,11 @@ class Blink(commands.Cog):
   def __init__(self, bot):
     self.bot = bot
 #############################################    
-  @commands.group(name="blink", usage="<option>", invoke_without_command=True)
-  async def blink(self, ctx: commands.Context):
-    """Test Help Message?"""
-    await ctx.send_help(ctx.command)
 
 #########################
 # XIAO BOT SHENNANIGANS #
 #########################
-  @blink.command(name='say')
+  @commands.command(name='say')
   async def say(self, ctx, channel_mention=None):
   #DEFINE VARIABLES
     img_url = None
@@ -56,6 +52,10 @@ class Blink(commands.Cog):
         await ctx.send(message)
     elif channel is not None:
         await channel.send(message)
+  if ctx == "help":
+    """Test Help Message?"""
+    await ctx.send_help(ctx.command)
+
 ####################################################################
 def setup(bot):
   bot.add_cog(Blink(bot))
