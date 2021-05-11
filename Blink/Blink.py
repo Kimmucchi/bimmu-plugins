@@ -26,6 +26,7 @@ class Blink(commands.Cog):
 #########################
   @xiao.command(name='say')
   async def say(self, ctx, channel_mention=None):
+    """Make Xiao say something!"""
   #DEFINE VARIABLES
     img_url = None
     thumbnail_url = None
