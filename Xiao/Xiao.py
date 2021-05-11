@@ -19,7 +19,6 @@ class Xiao(commands.Cog):
 # XIAO BOT SHENNANIGANS #
 #########################
   @commands.command(name='say')
-  @commands.has_role('TC')
   async def say(self, ctx, channel_mention=None):
   #DEFINE VARIABLES
     img_url = None
