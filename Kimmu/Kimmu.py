@@ -21,11 +21,7 @@ class Kimmu(commands.Cog):
   async def reactionrole(self, ctx: commands.Context):
     """Test?"""
     await ctx.send_help(ctx.command)
-      
-  @reactionrole.command(name="add", aliases=["make"])
-  @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
-  async def rr_add(self, ctx, message: str, role: discord.Role, emoji: Emoji, ignored_roles: commands.Greedy[discord.Role] = None):
-    """TEST #2"""
+
 #########################
 # XIAO BOT SHENNANIGANS #
 #########################
