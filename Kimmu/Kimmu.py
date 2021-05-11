@@ -16,7 +16,7 @@ class Kimmu(commands.Cog):
   def __init__(self, bot):
     self.bot = bot
 #############################################    
-  @commands.group(name="reactionrole", aliases=["rr"], invoke_without_command=True)
+  @commands.group(name="xiao", usage="<option>", invoke_without_command=True)
   @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
   async def reactionrole(self, ctx: commands.Context):
     """Test?"""
