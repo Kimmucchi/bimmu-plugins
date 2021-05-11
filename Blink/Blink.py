@@ -18,7 +18,6 @@ class Blink(commands.Cog):
     self.bot = bot
 #############################################    
   @commands.group(name="blink", usage="<option>", invoke_without_command=True)
-  @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
   async def blink(self, ctx: commands.Context):
     """Test Help Message?"""
     await ctx.send_help(ctx.command)
