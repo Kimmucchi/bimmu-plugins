@@ -16,16 +16,16 @@ class Kimmu(commands.Cog):
   def __init__(self, bot):
     self.bot = bot
 #############################################    
-  @commands.group(name="xiao", usage="<option>", invoke_without_command=True)
+  @commands.group(name="kimmu", usage="<option>", invoke_without_command=True)
   @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
-  async def reactionrole(self, ctx: commands.Context):
+  async def kimmu(self, ctx: commands.Context):
     """Test?"""
     await ctx.send_help(ctx.command)
 
 #########################
 # XIAO BOT SHENNANIGANS #
 #########################
-  @xiao.command(name='say')
+  @kimmu.command(name='say')
   async def say(self, ctx, channel_mention=None):
   #DEFINE VARIABLES
     img_url = None
