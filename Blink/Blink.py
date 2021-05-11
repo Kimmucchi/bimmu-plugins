@@ -17,7 +17,10 @@ class Blink(commands.Cog):
   def __init__(self, bot):
     self.bot = bot
 #############################################    
-
+  @commands.group(name=xiao, usage="<option>", invoke_without_command=True)
+  async def xiao(self, ctx: commands.Context):
+    """These are Xiao's commands:"""
+    await ctx.send_help(ctx.command)
 #########################
 # XIAO BOT SHENNANIGANS #
 #########################
