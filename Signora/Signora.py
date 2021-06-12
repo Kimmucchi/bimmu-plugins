@@ -107,7 +107,7 @@ class Signora(commands.Cog):
     await ctx.send(f'**TW/HK/MO** : ')
     await ctx.send(now_thm.strftime("%Y-%m-%d %H:%M:%S"))'''
     try:
-      channel = await self.bot.fetch_channel(self.bot.reset_channel)
+      channel = await self.bot.fetch_channel(self.bot.config["reset_channel"])
     except discord.errors.HTTPException:
       print("reset channel not set")
     else:
