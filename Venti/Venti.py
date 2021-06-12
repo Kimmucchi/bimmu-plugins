@@ -66,7 +66,7 @@ class Venti(commands.Cog):
     "https://cdn.discordapp.com/attachments/840432140516720676/853416924091383808/20201111_232600.jpg",
     "https://cdn.discordapp.com/attachments/840432140516720676/853416924482371594/20201124_010711.jpg"]
 
-    await ctx.send(bloo[random])
+    await ctx.send(Lluna[random])
 
 
 ####################################################################
