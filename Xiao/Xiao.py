@@ -99,7 +99,7 @@ class Xiao(commands.Cog):
     • Daily reset in {hr_asia} hours and {min_asia} minutes!\
     \n• Weekly reset in {day_asia} days, {hr_asia} hours and {min_asia} minutes ')
 
-    embed.set_image(url='https://i.ibb.co/Tt0pZmy/kek.gif')
+    embed.set_image(url='https://media.discordapp.net/attachments/805967263488016394/812199054217052181/xiao.gif')
 
     '''await ctx.send(f'**ASIA** : ')
     await ctx.send(now_asia.strftime("%Y-%m-%d %H:%M:%S"))
