@@ -125,12 +125,10 @@ class Signora(commands.Cog):
 
 
   @commands.command(name='rconfig')
-  async def rconfig(self, ctx, channelID):
+  async def rconfig(ctx, channelID):
 
-    self.bot.reset_channel = channelID
-    #self.bot.config["reset_channel"] = channelID
-    #await self.bot.config.update()
-    await ctx.send("You did the do!")
+    self.bot.config["reset_channel"] = channelID
+    await self.bot.config.update()
 
   #-----------------------------------------------
 
