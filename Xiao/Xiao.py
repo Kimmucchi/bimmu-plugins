@@ -52,9 +52,9 @@ class Xiao(commands.Cog):
       if now.weekday() == 6:
         print("why the fuck is it 6")
         days = 0
-      else: 
-        print('this is right')
-        days += 1
+    else: 
+      print('this is right')
+      days += 1
     return days, hrs, mins
 
 #-----------------------------------------------
