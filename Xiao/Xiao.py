@@ -107,15 +107,11 @@ class Xiao(commands.Cog):
     await ctx.send(f'**TW/HK/MO** : ')
     await ctx.send(now_thm.strftime("%Y-%m-%d %H:%M:%S"))'''
     try:
-      channel = await self.bot.fetch_channel(self.bot.config["reset_channel"])
+      message = await self.bot.fetch_message(853397266492293120)
     except discord.errors.HTTPException:
       print("reset channel not set")
     else:
-      channel_messages = await channel.history(limit=10).flatten()
-      if len(channel_messages) == 0:
-        await ctx.send(embed=embed)
-      else:
-        await channel_messages[-1].edit(content="", embed=embed)
+        await message.edit(content="", embed=embed)
 
   @commands.command(name='purge')
   @commands.is_owner()
