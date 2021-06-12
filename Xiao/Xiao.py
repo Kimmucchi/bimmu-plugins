@@ -107,7 +107,7 @@ class Xiao(commands.Cog):
     await ctx.send(f'**TW/HK/MO** : ')
     await ctx.send(now_thm.strftime("%Y-%m-%d %H:%M:%S"))'''
     try:
-      message = await self.bot.fetch_message(853397266492293120)
+      message = await self.bot.fetch_message(853398422958112788)
     except discord.errors.HTTPException:
       print("reset channel not set")
     else:
