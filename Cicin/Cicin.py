@@ -17,7 +17,6 @@ calls = 0
 class Cicin(commands.Cog):
   def __init__(self, bot):
     self.bot = bot
-    self.time.start()
 #########################
 # SIGNORA BOT SHENNANIGANS #
 #########################
@@ -57,11 +56,14 @@ class Cicin(commands.Cog):
 #-----------------------------------------------
   @commands.command(name="bloo")
   async def bloo(self, ctx):
-    1 = "https://cdn.discordapp.com/attachments/840432140516720676/853341461435908116/IMG_20210511_130204.jpg"
-    2 = "https://cdn.discordapp.com/attachments/840432140516720676/853341617990008842/IMG_20210518_140429.jpg"
-    3 = "https://cdn.discordapp.com/attachments/840432140516720676/853390201597591602/IMG_20210608_133704.jpg"
 
-    await ctx.send(randrange(3))
+    random = randrange(0,2)
+    bloo = ["https://cdn.discordapp.com/attachments/840432140516720676/853341461435908116/IMG_20210511_130204.jpg",
+    "https://cdn.discordapp.com/attachments/840432140516720676/853341617990008842/IMG_20210518_140429.jpg",
+    "https://cdn.discordapp.com/attachments/840432140516720676/853390201597591602/IMG_20210608_133704.jpg"]
+
+    await ctx.send(bloo[random])
+
 
 ####################################################################
 def setup(bot):
