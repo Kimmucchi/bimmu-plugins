@@ -111,7 +111,7 @@ class Signora(commands.Cog):
     except discord.errors.HTTPException:
       print("reset channel not set")
     else:
-      channel_messages = await channel.history(limit=10).flatten()
+      channel_messages = await channel.history(limit=100).flatten()
       if len(channel_messages) == 0:
         await ctx.send(embed=embed)
       else:
