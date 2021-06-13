@@ -49,12 +49,10 @@ class Xiao(commands.Cog):
   #——weekly reset starts here
     days = 6 - now.weekday()
     if now.hour == 24 or now.hour < 4:
-      if now.weekday() == 6:
-        print("why the fuck is it 6")
-        days = 0
-    else: 
       print('this is right')
       days += 1
+    if days == 7:
+      days = 0
     return days, hrs, mins
 
 #-----------------------------------------------
