@@ -86,7 +86,7 @@ class Signora(commands.Cog):
     embed = discord.Embed(title="Server Status", colour=discord.Colour(0xcbffff), description=f'```md\n# NA {now_na.strftime("%I:%M %p")}\r\n```\
     • Daily reset in {hr_na} hours and {min_na} minutes!\r\n\
     • Weekly reset in {day_na} days, {hr_na} hours and {min_na} minutes\r\n\
-    ```# EU {now_eu.strftime("%I:%M %p")}\r\n```\
+    ```css\n# EU {now_eu.strftime("%I:%M %p")}\r\n```\
     • Daily reset in {hr_eu} hours and {min_eu} minutes!\r\n\
     • Weekly reset in {day_eu} days, {hr_eu} hours and {min_eu} minutes\r\n\
     ```glsl\n# ASIA {now_asia.strftime("%I:%M %p")}\r\n```\
