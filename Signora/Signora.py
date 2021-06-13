@@ -85,16 +85,16 @@ class Signora(commands.Cog):
 
     embed = discord.Embed(title="Server Status", colour=discord.Colour(0xcbffff), description=f'__**Server Time**__:\
     \n```md\n# NA {now_na.strftime("%I:%M %p")}```\
-    • Daily reset in {hr_na} hours and {min_na} minutes!\
+    \n• Daily reset in {hr_na} hours and {min_na} minutes!\
     \n• Weekly reset in {day_na} days, {hr_na} hours and {min_na} minutes\
     \n```# EU {now_eu.strftime("%I:%M %p")}```\
-    • Daily reset in {hr_eu} hours and {min_eu} minutes!\
+    \n• Daily reset in {hr_eu} hours and {min_eu} minutes!\
     \n• Weekly reset in {day_eu} days, {hr_eu} hours and {min_eu} minutes\
     \n```glsl\n# ASIA {now_asia.strftime("%I:%M %p")}```\
-    • Daily reset in {hr_asia} hours and {min_asia} minutes!\
+    \n• Daily reset in {hr_asia} hours and {min_asia} minutes!\
     \n• Weekly reset in {day_asia} days, {hr_asia} hours and {min_asia} minutes\
     \n```fix\n# TW/HK/MO {now_thm.strftime("%I:%M %p")}```\
-    • Daily reset in {hr_asia} hours and {min_asia} minutes!\
+    \n• Daily reset in {hr_asia} hours and {min_asia} minutes!\
     \n• Weekly reset in {day_asia} days, {hr_asia} hours and {min_asia} minutes ')
 
     embed.set_image(url='https://i.ibb.co/Tt0pZmy/kek.gif')
