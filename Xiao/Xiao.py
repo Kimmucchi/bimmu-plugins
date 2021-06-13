@@ -53,7 +53,7 @@ class Xiao(commands.Cog):
       days += 1
     if days == 7:
       days = 0
-    return days, hrs, m
+    return days, hrs, mins
 
 #-----------------------------------------------
 
