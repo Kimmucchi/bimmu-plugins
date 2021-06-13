@@ -53,7 +53,7 @@ class Xiao(commands.Cog):
       days += 1
     if days == 7:
       days = 0
-    return days, hrs, mins
+    return days, hrs, m
 
 #-----------------------------------------------
 
@@ -83,17 +83,17 @@ class Xiao(commands.Cog):
     # Convert to TW/HK/MO
     now_thm = now.astimezone(timezone('Etc/GMT-8'))
 
-    embed = discord.Embed(title="Server Status", colour=discord.Colour(0x1d515b), description=f'__**Server Time**__:\
-    \n```md\n# NA {now_na.strftime("%I:%M %p")}```\
+    embed = discord.Embed(title="Server Status", colour=discord.Colour(0xcbffff), description=f'__**Server Time**__:\
+    \n```md\n# NA {now_na.strftime("%I:%M %p")}\n```\
     • Daily reset in {hr_na} hours and {min_na} minutes!\
     \n• Weekly reset in {day_na} days, {hr_na} hours and {min_na} minutes\
-    \n```# EU {now_eu.strftime("%I:%M %p")}```\
+    \n```# EU {now_eu.strftime("%I:%M %p")}\n```\
     • Daily reset in {hr_eu} hours and {min_eu} minutes!\
     \n• Weekly reset in {day_eu} days, {hr_eu} hours and {min_eu} minutes\
-    \n```glsl\n# ASIA {now_asia.strftime("%I:%M %p")}```\
+    \n```glsl\n# ASIA {now_asia.strftime("%I:%M %p")}\n```\
     • Daily reset in {hr_asia} hours and {min_asia} minutes!\
     \n• Weekly reset in {day_asia} days, {hr_asia} hours and {min_asia} minutes\
-    \n```fix\n# TW/HK/MO {now_thm.strftime("%I:%M %p")}```\
+    \n```fix\n# TW/HK/MO {now_thm.strftime("%I:%M %p")}\n```\
     • Daily reset in {hr_asia} hours and {min_asia} minutes!\
     \n• Weekly reset in {day_asia} days, {hr_asia} hours and {min_asia} minutes ')
 
