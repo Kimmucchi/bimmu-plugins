@@ -116,9 +116,9 @@ class Signora(commands.Cog):
 
   @commands.command(name='purge')
   @commands.is_owner()
-  async def purge(self, ctx):
-    deleted = await ctx.channel.purge(limit=100, check=None)
-    await ctx.channel.send('Deleted {} message(s)'.format(len(deleted)))
+  async def purge(self, ctx, amt):
+    deleted = await ctx.channel.purge(limit=amt, check=None)
+    await ctx.channel.send('I have silenced {} message(s)'.format(len(deleted)))
 
 
   @commands.command(name='rconfig')
