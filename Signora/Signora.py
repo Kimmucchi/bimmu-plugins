@@ -48,7 +48,7 @@ class Signora(commands.Cog):
 
   #——weekly reset starts here
     days = 6 - now.weekday()
-    if now.hour >= 4 and now.hour <=23:
+    if now.hour == 24 or now.hour < 4:
       print('this is right')
       days += 1
     if days == 7:
