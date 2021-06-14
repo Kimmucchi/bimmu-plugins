@@ -71,7 +71,7 @@ class Venti(commands.Cog):
 #-----------------------------------------------
 #SMOL KIK
   @commands.command(name="bully")
-  async def bully(self, ctxv):
+  async def bully(self, ctx):
     bully = "https://media.discordapp.net/attachments/851930576520871997/854074818843508776/smolkik.gif"
     await ctx.send(bully)
 
