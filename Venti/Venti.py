@@ -106,6 +106,16 @@ class Venti(commands.Cog):
     await msg.delete()
     await ctx.send(images[random])
 #-----------------------------------------------
+#KISS
+  @commands.command(name='kiss')
+  async def kiss(self, ctx):
+    images = ["https://discord.com/channels/840432138298195968/851930576520871997/855146388701839370",
+    "https://cdn.discordapp.com/emojis/824900569709674496.png?v=1"]
+    random = randrange(0,1)
+    msg = ctx.message
+    await msg.delete()
+    await ctx.send(images[random])
+#-----------------------------------------------
 #WHY
   @commands.command(name='why')
   async def why(self, ctx):
@@ -123,6 +133,7 @@ class Venti(commands.Cog):
     await msg.delete()
     await ctx.send(embed=embed)
 #-----------------------------------------------
+
 
 ####################################################################
 def setup(bot):
