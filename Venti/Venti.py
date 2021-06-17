@@ -110,7 +110,7 @@ class Venti(commands.Cog):
 #DRINK
   @commands.command(name='drink')
   async def drink(self, ctx):
-    embed = discord.Embed(title="`v/drink`", colour=discord.Colour(0x8f097), description="**I drink to forget**,\n...*but I always remember*.")
+    embed = discord.Embed(title="I drink to forget,", colour=discord.Colour(0x8f097), description="...*but I always remember*.")
     embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/788031208020770826.png?v=1")
 
     await ctx.send(embed=embed)
