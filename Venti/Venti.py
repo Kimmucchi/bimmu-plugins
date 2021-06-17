@@ -101,7 +101,7 @@ class Venti(commands.Cog):
     images = ["https://cdn.discordapp.com/emojis/804245164721176606.png?v=1",
     "https://cdn.discordapp.com/emojis/804246915834445875.png?v=1",
     "https://cdn.discordapp.com/emojis/804248719535898624.png?v=1"]
-    random = randrange(0,2)
+    random = randrange(0,3)
     msg = ctx.message
     await msg.delete()
     await ctx.send(images[random])
@@ -111,7 +111,7 @@ class Venti(commands.Cog):
   async def kiss(self, ctx):
     images = ["https://cdn.discordapp.com/emojis/816686446269693992.png?v=1",
     "https://cdn.discordapp.com/emojis/824900569709674496.png?v=1"]
-    random = randrange(0,1)
+    random = randrange(0,2)
     msg = ctx.message
     await msg.delete()
     await ctx.send(images[random])
