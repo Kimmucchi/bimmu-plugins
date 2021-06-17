@@ -9,7 +9,7 @@ from discord.ext import commands, tasks
 from pytz import timezone
 from random import randrange
 
-bot = commands.Bot(command_prefix='x/')
+bot = commands.Bot(command_prefix='v/')
 bot.remove_command('help')
 
 calls = 0
@@ -22,7 +22,7 @@ class Venti(commands.Cog):
 #########################
 #-----------------------------------------------
   @commands.command(name='say')
-  @checks.has_permissions(PermissionLevel.MODERATOR)
+  #@checks.has_permissions(PermissionLevel.MODERATOR)
   async def say(self, ctx, channel_mention=None):
   #DEFINE VARIABLES
     img_url = None
@@ -56,7 +56,6 @@ class Venti(commands.Cog):
 
 #-----------------------------------------------
   @commands.command(name="lluna")
-  @checks.has_permissions(PermissionLevel.REGULAR)
   async def lluna(self, ctx):
 
     random = randrange(0,2)
