@@ -80,7 +80,7 @@ class Jean(commands.Cog):
         #CHECK IF MESSAGE SENT IF FROM THE PERSON WHO REQUESTED THE COMMAND
         def check(m):
           return m.author.id == ctx.author.id
-        embed = discord.Embed(title="Watchu wanna say?")
+        embed = discord.Embed(title="What would you like me to say?")
         msg1 = await ctx.send(embed=embed)
         response = await self.bot.wait_for("message", timeout=120, check=check)
         message = response.content
