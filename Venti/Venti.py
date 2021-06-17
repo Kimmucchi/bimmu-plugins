@@ -109,7 +109,7 @@ class Venti(commands.Cog):
 #KISS
   @commands.command(name='kiss')
   async def kiss(self, ctx):
-    images = ["https://discord.com/channels/840432138298195968/851930576520871997/855146388701839370",
+    images = ["https://cdn.discordapp.com/emojis/816686446269693992.png?v=1",
     "https://cdn.discordapp.com/emojis/824900569709674496.png?v=1"]
     random = randrange(0,1)
     msg = ctx.message
