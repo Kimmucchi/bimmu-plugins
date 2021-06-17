@@ -83,12 +83,16 @@ class Venti(commands.Cog):
   @commands.command(name="please")
   async def please(self, ctx):
     please = "https://i.ibb.co/tQL1xc3/please.gif"
+    msg = ctx.message
+    await msg.delete()
     await ctx.send(please)
 #-----------------------------------------------
 #SURPRISED
   @commands.command(name='surprised')
   async def surprised(self, ctx):
     surprised = "https://i.ibb.co/f0j5SVL/surprised.gif"
+    msg = ctx.message
+    await msg.delete()
     await ctx.send(surprised)
 #-----------------------------------------------
 #GUN
@@ -98,13 +102,16 @@ class Venti(commands.Cog):
     "https://cdn.discordapp.com/emojis/804246915834445875.png?v=1",
     "https://cdn.discordapp.com/emojis/804248719535898624.png?v=1"]
     random = randrange(0,2)
-
+    msg = ctx.message
+    await msg.delete()
     await ctx.send(images[random])
 #-----------------------------------------------
 #WHY
   @commands.command(name='why')
   async def why(self, ctx):
     image = "https://cdn.discordapp.com/emojis/812939539450429471.png?v=1"
+    msg = ctx.message
+    await msg.delete()
     await ctx.send(image)
 #-----------------------------------------------
 #DRINK
@@ -112,7 +119,8 @@ class Venti(commands.Cog):
   async def drink(self, ctx):
     embed = discord.Embed(title="I drink to forget,", colour=discord.Colour(0x8f097), description="...*but I always remember*.")
     embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/788031208020770826.png?v=1")
-
+    msg = ctx.message
+    await msg.delete()
     await ctx.send(embed=embed)
 #-----------------------------------------------
 
