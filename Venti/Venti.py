@@ -58,7 +58,7 @@ class Venti(commands.Cog):
   @commands.command(name="lluna")
   async def lluna(self, ctx):
 
-    random = randrange(0,2)
+    random = randrange(0,7)
     Lluna = ["https://cdn.discordapp.com/attachments/840432140516720676/853416477062594590/IMG-20180518-WA0030.jpg",
     "https://cdn.discordapp.com/attachments/840432140516720676/853416754896961596/20201111_232601.jpg",
     "https://cdn.discordapp.com/attachments/840432140516720676/853416922736230430/IMG-20190824-WA0012.jpg",
