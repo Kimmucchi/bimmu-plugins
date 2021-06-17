@@ -73,7 +73,6 @@ class Venti(commands.Cog):
 #-----------------------------------------------
 #SMOL KIK
   @commands.command(name="bully")
-  @checks.has_permissions(PermissionLevel.REGULAR)
   async def bully(self, ctx):
     bully = "https://media.discordapp.net/attachments/851930576520871997/854074818843508776/smolkik.gif"
     await ctx.send(bully)
@@ -81,21 +80,18 @@ class Venti(commands.Cog):
 #-----------------------------------------------
 #PLEASE
   @commands.command(name="please")
-  @checks.has_permissions(PermissionLevel.REGULAR)
   async def please(self, ctx):
     please = "https://i.ibb.co/tQL1xc3/please.gif"
     await ctx.send(please)
 #-----------------------------------------------
 #SURPRISED
   @commands.command(name='surprised')
-  @checks.has_permissions(PermissionLevel.REGULAR)
   async def surprised(self, ctx):
     surprised = "https://i.ibb.co/f0j5SVL/surprised.gif"
     await ctx.send(surprised)
 #-----------------------------------------------
 #GUN
   @commands.command(name='gun')
-  @checks.has_permissions(PermissionLevel.REGULAR)
   async def gun(self, ctx):
     images = ["https://cdn.discordapp.com/emojis/804245164721176606.png?v=1",
     "https://cdn.discordapp.com/emojis/804246915834445875.png?v=1",
@@ -106,14 +102,12 @@ class Venti(commands.Cog):
 #-----------------------------------------------
 #WHY
   @commands.command(name='why')
-  @checks.has_permissions(PermissionLevel.REGULAR)
   async def why(self, ctx):
     image = "https://cdn.discordapp.com/emojis/812939539450429471.png?v=1"
     await ctx.send(image)
 #-----------------------------------------------
 #DRINK
   @commands.command(name='drink')
-  @checks.has_permissions(PermissionLevel.REGULAR)
   async def drink(self, ctx):
     embed = discord.Embed(title="`v/drink`", colour=discord.Colour(0x8f097), description="**I drink to forget**,\n...*but I always remember*.")
     embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/788031208020770826.png?v=1")
