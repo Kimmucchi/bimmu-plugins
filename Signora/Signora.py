@@ -8,8 +8,7 @@ from dotenv import load_dotenv
 from discord.ext import commands, tasks
 from pytz import timezone
 
-bot = commands.Bot(command_prefix='x/')
-bot.remove_command('help')
+from core import checks
 
 calls = 0
 
@@ -58,7 +57,7 @@ class Signora(commands.Cog):
 #-----------------------------------------------
 
   @commands.command(name='console')
-  @checks.has_permissions(PermissionLevel.OWNER)
+  @checks.has_permissions(PermissionLevel.REGULAR)
   async def console(self, ctx):
     pass
 
