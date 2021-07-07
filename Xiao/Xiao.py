@@ -56,6 +56,9 @@ class Xiao(commands.Cog):
     return days, hrs, mins
 
 #-----------------------------------------------
+  @commands.command(name="dm")
+  async def dm(self, context, user: discord.User, message):
+    await user.send(message)
 
   @commands.command(name='console')
   async def console(self, ctx):

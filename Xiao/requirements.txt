@@ -1,5 +1,5 @@
 aiohttp==3.6.3
-discord.py==1.5.1
+discord.py==1.7.3
 fuzzywuzzy==0.18.0
 numpy==1.19.4
 opencv-python-headless==4.4.0.46
