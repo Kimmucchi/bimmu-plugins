@@ -57,7 +57,7 @@ class Xiao(commands.Cog):
 
 #-----------------------------------------------
   @commands.command(name="dm")
-  async def dm(self, context, user: discord.User, message):
+  async def dm(self, context, user: discord.User, *message):
     await user.send(message)
 
   @commands.command(name='console')
