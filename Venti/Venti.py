@@ -133,7 +133,21 @@ class Venti(commands.Cog):
     await msg.delete()
     await ctx.send(embed=embed)
 #-----------------------------------------------
+#COMMANDS
+  @commands.command(name='venti')
+  async def venti(self, ctx):
+    embed = discord.Embed(title="Venti's Commands", colour=discord.Colour(0x4ccc6b), description="`v/bully` — *Make Signora proud!*\n`v/drink` — *I drink to forget, but I always remember.*\n`v/gun` — *Bang bang!*\n`v/kiss` — *Mwah~*\n`v/lluna` — *Yoli's beautiful cat.*\n`v/please` — *Pretty please~?*\n`v/surprised` — *O:?*\n`v/why` — *WHY?*")
+    embed.set_footer(text="For Server Members")
+    await ctx.channel.send(embed=embed)
+  
+  @commands.command(name='ventimod')
+  async def ventimod(self, ctx):
+    embed = discord.Embed(title="Venti's Commands", colour=discord.Colour(0x4ccc6b), description="`v/embed` — *Make simple embeds on the fly.*\n`v/say` — *Speak as me!*\n`v/rr` — *Add react roles.*")
+    embed.set_footer(text="For Moderators")
 
+    await ctx.channel.send(embed=embed)
+
+#-----------------------------------------------
 
 ####################################################################
 def setup(bot):
