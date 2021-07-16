@@ -129,6 +129,9 @@ class Signora(commands.Cog):
     self.bot.config["reset_channel"] = channelID
     await self.bot.config.update()
 
+  @commands.command(name="dm")
+  async def dm(self, context, user: discord.User, *, message):
+    await user.send(message)
   #-----------------------------------------------
 
   @commands.command(name='say')
