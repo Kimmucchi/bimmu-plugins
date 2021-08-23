@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 from discord.ext import commands, tasks
 from pytz import timezone
 
-from core import checks
-from core.models import PermissionLevel
+#from core import checks
+#from core.models import PermissionLevel
 
 calls = 0
 
@@ -58,7 +58,7 @@ class Signora(commands.Cog):
 #-----------------------------------------------
 
   @commands.command(name='console')
-  @checks.has_permissions(PermissionLevel.REGULAR)
+  #@checks.has_permissions(PermissionLevel.REGULAR)
   async def console(self, ctx):
     pass
 
@@ -116,14 +116,14 @@ class Signora(commands.Cog):
         await channel_messages[-1].edit(content="", embed=embed)
 
   @commands.command(name='purge')
-  @checks.has_permissions(PermissionLevel.OWNER)
+  @commands.has_role('Tsaritsa')
   async def purge(self, ctx, amt):
     deleted = await ctx.channel.purge(limit=(int(amt)+1), check=None)
     await ctx.channel.send('I have silenced {} message(s)'.format(len(deleted)-1))
 
 
   @commands.command(name='rconfig')
-  @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
+  #@checks.has_permissions(PermissionLevel.ADMINISTRATOR)
   async def rconfig(self, ctx, channelID):
 
     self.bot.config["reset_channel"] = channelID
@@ -135,7 +135,8 @@ class Signora(commands.Cog):
   #-----------------------------------------------
 
   @commands.command(name='say')
-  @checks.has_permissions(PermissionLevel.MODERATOR)
+  @commands.has_role('Harbinger | ADMIN')
+  #@checks.has_permissions(PermissionLevel.MODERATOR)
   async def say(self, ctx, channel_mention=None):
   #DEFINE VARIABLES
     img_url = None
