@@ -97,7 +97,7 @@ class Signora(commands.Cog):
     • Daily reset in {hr_asia} hours and {min_asia} minutes!\r\n\
     • Weekly reset in {day_asia} days, {hr_asia} hours and {min_asia} minutes ')
 
-    embed.set_image(url='https://i.ibb.co/Tt0pZmy/kek.gif')
+    embed.set_image(url='https://cdn.discordapp.com/attachments/870223674672840704/878505430719004702/Signora_Moth.gif')
 
     '''await ctx.send(f'**ASIA** : ')
     await ctx.send(now_asia.strftime("%Y-%m-%d %H:%M:%S"))
