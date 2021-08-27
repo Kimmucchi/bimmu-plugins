@@ -84,7 +84,7 @@ class Signora(commands.Cog):
     # Convert to TW/HK/MO
     now_thm = now.astimezone(timezone('Etc/GMT-8'))
 
-    embed = discord.Embed(title="Server Status", colour=discord.Colour(0xcbffff), description=f'```md\n# NA {now_na.strftime("%I:%M %p")}\r\n```\
+    embed = discord.Embed(title="Server Status", colour=11010048, description=f'```md\n# NA {now_na.strftime("%I:%M %p")}\r\n```\
     • Daily reset in {hr_na} hours and {min_na} minutes!\r\n\
     • Weekly reset in {day_na} days, {hr_na} hours and {min_na} minutes\r\n\
     ```bash\n# EU {now_eu.strftime("%I:%M %p")}\r\n```\
